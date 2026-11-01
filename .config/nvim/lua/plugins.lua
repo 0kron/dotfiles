@@ -58,6 +58,7 @@ dashboard.section.buttons.val = {
 }
 dashboard.section.header.val = {
   [[                                               ]],
+  [[                                               ]],
   [[    ⡀⢀⡠⠀⠄⢀⠀⡀                                   ]],
   [[⣀⠤⠘⣀⠁⠌⡀⣴⣂⢬⣌⢡⠒⠂⠄⠠⢀⣄                             ]],
   [[⡄⢀⢰⣠⣚⣼⣴⣿⣿⣿⠿⡿⢿⡷⣤⣼⡯⠋                             ]],

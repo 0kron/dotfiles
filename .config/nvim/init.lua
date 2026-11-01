@@ -16,7 +16,7 @@ vim.o.smartcase = true
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.schedule(function() vim.o.clipboard = "unnamedplus" end)
+vim.o.clipboard = "unnamedplus"
 vim.o.breakindent = true
 vim.o.undofile = true
 vim.o.signcolumn = "yes"
