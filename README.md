@@ -1,4 +1,4 @@
-# 0kron
+# Cuervo - Nunca más
 ## Minimal Arch + Sway Setup
 
 ### Software
