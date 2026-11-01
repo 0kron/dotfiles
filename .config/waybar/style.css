@@ -1,0 +1,59 @@
+/* Minimal Waybar style */
+@define-color bg       #171715;
+@define-color fg       #ebdbb2;
+@define-color primary  #71958d;
+@define-color urgent   #ff6b6b;
+
+/* Reset */
+* {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    font-family: "Cousine Nerd Font";
+    font-size: 14px;
+    color: @fg;
+}
+
+/* Bar */
+#waybar {
+    background: @bg;
+}
+
+/* Padding común para todos los módulos */
+#battery,
+#clock,
+#network,
+#window,
+#pulseaudio,
+#window,
+#tray {
+    padding: 0 8px;
+    border-bottom: 4px solid @bg;
+    border-top: 4px solid @bg;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0px 7px;
+    background: transparent;
+    color: @fg;
+    border-bottom: 4px solid @bg;
+}
+#workspaces button + button { margin-left: 2px; }
+#workspaces button.focused  { border-bottom-color: @primary; }
+#workspaces button.urgent   { background: @urgent; color: @bg; }
+#workspaces button:hover    { border-bottom-color: @primary; }
+
+#clock:hover,
+#network:hover,
+#battery:hover,
+#pulseaudio:hover,
+#window:hover,
+#tray:hover {
+    border-bottom: 4px solid @primary;
+}
+
+#network.disconnected  { opacity: 0.5; }
+#pulseaudio.muted      { opacity: 0.5; }

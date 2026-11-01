@@ -5,13 +5,14 @@
 
 - **WM:** Sway
 - **Distro**: Arch Linux
+- **Shell**: ZSH
 - **Editor**: Neovim (>0.12.0)
-- **Term Emulator**: Kitty
-- **Fonts**: Tinos NF, Cousine NF, GoMono NF.
-- **Launcher**:
+- **Term Emulator**: Kitty + Tmux
+- **Fonts**: Cousine NF, GoMono NF.
+- **Launcher**: wmenu
 - **Bar**: Waybar
 
-### Paleta de colores
+### Dependencies
 
-- White: #ffffff
-- 
+- **System Info**: acpi, htop, man-pages, man-db.
+- **System Admin**: stow, brightnessctl, wl-clipboard, keyd.

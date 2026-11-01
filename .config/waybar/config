@@ -1,0 +1,89 @@
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "mode": "dock",
+    "ipc": true,
+
+    "modules-left": [
+       "sway/workspaces",
+       "custom/sep0",
+       "sway/window",
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+       "tray",
+       "pulseaudio",
+       "custom/sep1",
+       "network",
+       "custom/sep2",
+       "battery",
+       "custom/sep3",
+       "clock",
+    ],
+    "sway/window": {
+       "format": "{app_id}",
+       "max-length": 50
+    },
+
+    "battery":{
+       "bat":"BAT0", 
+       "adapter":"AC",
+       "interval":60,
+       "states": {
+          "warning": 30,
+          "critical": 15
+       },
+       "events": {
+          "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+          "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+          "on-charging-100": "notify-send -u normal 'Battery Full!'"
+       },
+       "format": "<span foreground='#71958d'>bat:</span> {capacity}",
+       "max-length": 25,
+       "max-capacity":false
+    },
+
+    "clock": {
+       "interval": 30,
+       "tooltip": true,
+       "format": "{:%H.%M}",
+       "tooltip-format": "{:%Y-%m-%d}",
+    },
+
+    "network": {
+       "interval": 5,
+        "format-wifi": "<span foreground='#71958d'>net:</span> wifi",
+        "format-ethernet": "<span foreground='#71958d'>net:</span> eth",
+        "format-disconnected": "<span foreground='#71958d'>net:</span> none",
+        "tooltip-format": "{ifname}: {essid}",
+        "on-click": "kitty nmtui"
+    },
+
+    "pulseaudio": {
+        "format": "<span foreground='#71958d'>vol:</span> {volume}",
+        "format-muted": "<span foreground='#71958d'>mut:</span> {volume}",
+	"on-click": "pavucontrol"
+    },
+
+    "sway/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{name}",
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "custom/sep0": { "format": "│", "tooltip": false },
+    "custom/sep1": { "format": "│", "tooltip": false },
+    "custom/sep2": { "format": "│", "tooltip": false },
+    "custom/sep3": { "format": "│", "tooltip": false },
+}
