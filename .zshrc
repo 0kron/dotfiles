@@ -53,6 +53,18 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu select
 
+# Variables
+export EDITOR=nvim
+export VISUAL=nvim
+export BROWSER=librewolf
+
+# NNN Config
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_USE_EDITOR=1
+export NNN_BMS="h:$HOME;c:$HOME/Dotfiles/;d:$HOME/Documents/;"
+export NNN_PLUG='p:preview-tui'
+export NNN_PAGER='bat --style=numbers --color=always'
+
 # Aliases
 alias ls='ls --color'
 alias vim='nvim'
@@ -61,3 +73,4 @@ alias ta='tmux attach'
 alias tn='tmux new -s'
 alias tl='tmux ls'
 alias tk='tmux kill-session -t'
+alias n='nnn -eaDH'

@@ -93,8 +93,7 @@ require("blink.cmp").setup({
     default = { "lsp", "path", "snippets", "buffer" },
   },
   keymap = {
-    preset = "enter",
-    ["<CR>"] = { "select_and_accept", "fallback" },
+    preset = "default",
   },
   fuzzy = { implementation = "lua" },
   signature = { enabled = true },

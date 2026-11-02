@@ -51,6 +51,6 @@ vim.diagnostic.config({
 })
 
 -- [[ Cargar módulos ]]
-require("plugins")
 require("lsp")
+require("plugins")
 require("keymaps")
