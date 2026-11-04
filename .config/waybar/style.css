@@ -36,7 +36,7 @@
 
 /* Workspaces */
 #workspaces button {
-    padding: 0px 7px;
+    padding: 0px 5px;
     background: transparent;
     color: @fg;
     border-bottom: 4px solid @bg;
@@ -44,7 +44,7 @@
 #workspaces button + button { margin-left: 2px; }
 #workspaces button.focused  { border-bottom-color: @primary; }
 #workspaces button.urgent   { background: @urgent; color: @bg; }
-#workspaces button:hover    { border-bottom-color: @primary; }
+#workspaces button:hover    { border-bottom-color: @fg; }
 
 #clock:hover,
 #network:hover,

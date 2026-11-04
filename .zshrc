@@ -47,6 +47,7 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt interactivecomments
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -54,16 +55,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu select
 
 # Variables
+# export DISPLAY=:1
 export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=librewolf
-
-# NNN Config
-export NNN_FIFO=/tmp/nnn.fifo
-export NNN_USE_EDITOR=1
-export NNN_BMS="h:$HOME;c:$HOME/Dotfiles/;d:$HOME/Documents/;"
-export NNN_PLUG='p:preview-tui'
-export NNN_PAGER='bat --style=numbers --color=always'
 
 # Aliases
 alias ls='ls --color'
@@ -74,3 +69,4 @@ alias tn='tmux new -s'
 alias tl='tmux ls'
 alias tk='tmux kill-session -t'
 alias n='nnn -eaDH'
+alias xdocker='xhost +SI:localuser:root'
